@@ -41,7 +41,7 @@ def check_alert(results):
         # Рассчитайте процент перекрытия
         overlap_percentage = (intersection_area / rectangle_area) * 100
 
-        flag = flag or overlap_percentage <= 15
+        flag = flag or overlap_percentage >= 15
 
     return flag
 
